@@ -62,9 +62,9 @@
 		B9867FE31DD9FC1400DF7200 /* christofides */ = {
 			isa = PBXGroup;
 			children = (
+				B9867FEC1DDA0C4400DF7200 /* input.txt */,
 				B9867FE41DD9FC1400DF7200 /* main.cpp */,
 				B9867FEB1DD9FE8800DF7200 /* mst.h */,
-				B9867FEC1DDA0C4400DF7200 /* input.txt */,
 				B9867FED1DDA0E5200DF7200 /* tools.h */,
 				B9867FEE1DDA1E6500DF7200 /* hungary.h */,
 				B952BC481DDB217800690ABA /* euler.h */,

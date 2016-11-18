@@ -12,13 +12,14 @@
 #include <map>
 #include <algorithm>
 
+using namespace std;
+
 #include "mst.h"
 #include "tools.h"
 #include "euler.h"
 #include "hungary.h"
 
 
-using namespace std;
 
 int main() {
     freopen("input.txt", "r", stdin);
@@ -37,12 +38,12 @@ int main() {
         g[v2][v1] = v[i].first;
     }
     
-    for(int i = 0 ;i < n;++i) {
-        for(int j = 0;j < n;++j) {
-            cout << g[i][j] << " ";
-        }
-        cout << endl;
-    }
+//    for(int i = 0 ;i < n;++i) {
+//        for(int j = 0;j < n;++j) {
+//            cout << g[i][j] << " ";
+//        }
+//        cout << endl;
+//    }
     
     check_metric(n, g);
     
@@ -75,49 +76,50 @@ int main() {
     
     vector <int> PERFECT_MATCHING = hungary(subg);
     
-    cout << "mst:" << endl;
-    for(int i = 0;i < n-1; ++i) {
-        cout << MST[i].second.first + 1 << " " << MST[i].second.second + 1 << endl;
-    }
-    cout << "verts for matching:" << endl;
-    for(int i = 0;i < subn; ++i) {
-        cout << points_for_matching[i] + 1<< " ";
-    }
-    cout << endl;
-    cout << "matching:" << endl;
-    for(int i = 0;i < subn;++i) {
-        cout << points_for_matching[i] + 1 << " " << points_for_matching[PERFECT_MATCHING[i]] + 1 << endl;
-    }
+//    cout << "mst:" << endl;
+//    for(int i = 0;i < n-1; ++i) {
+//        cout << MST[i].second.first + 1 << " " << MST[i].second.second + 1 << endl;
+//    }
+//    cout << "verts for matching:" << endl;
+//    for(int i = 0;i < subn; ++i) {
+//        cout << points_for_matching[i] + 1<< " ";
+//    }
+//    cout << endl;
+//    cout << "matching:" << endl;
+//    for(int i = 0;i < subn;++i) {
+//        cout << points_for_matching[i] + 1 << " " << points_for_matching[PERFECT_MATCHING[i]] + 1 << endl;
+//    }
     
     //merge edges from MST and Best Matching subrgraphs to H
     vector <vector <int> > h(n,vector <int>(n,0));
     for(int i = 0;i < n-1;++i) {
         v1 = MST[i].second.first;
         v2 = MST[i].second.second;
-        h[v1][v2] = h[v2][v1] = 1;
+        ++h[v1][v2];
+        ++h[v2][v1];
     }
     
     for(int i = 0;i < subn; ++i) {
         v1 = points_for_matching[i];
         v2 = points_for_matching[PERFECT_MATCHING[i]];
-        h[v1][v2] = 1;
+        ++h[v1][v2];
     }
     
-    cout << "merged: " << endl;
-    for(int i = 0;i < n; ++i) {
-        for(int j = 0;j < n;++j) {
-            cout << h[i][j] << " ";
-        }
-        cout << endl;
-    }
+//    cout << "merged: " << endl;
+//    for(int i = 0;i < n; ++i) {
+//        for(int j = 0;j < n;++j) {
+//            cout << h[i][j] << " ";
+//        }
+//        cout << endl;
+//    }
     
     vector <int> EULER_CYCLE = euler_cycle(h);
     
-    cout << "Euler cycle: " << endl;
-    for(int i = 0;i < EULER_CYCLE.size(); ++i) {
-        cout << EULER_CYCLE[i] + 1 << " ";
-    }
-    cout << endl;
+//    cout << "Euler cycle: " << endl;
+//    for(int i = 0;i < EULER_CYCLE.size(); ++i) {
+//        cout << EULER_CYCLE[i] + 1 << " ";
+//    }
+//    cout << endl;
     
     vector <int> MIN_HAM_CYCLE;
     vector <char> used(n, 0);

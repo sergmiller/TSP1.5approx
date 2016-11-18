@@ -11,9 +11,7 @@
 
 #define INF (long long)1e15
 
-#include <vector>
 #include <cassert>
-#include <algorithm>
 
 void check_metric(int n, vector <vector <int64_t> >&  g) {
     for(int i = 0;i < n;++i) {

@@ -9,11 +9,6 @@
 #ifndef mst_h
 #define mst_h
 
-#include <vector>
-#include <algorithm>
-
-using std::vector;
-using std::pair;
 
 // Decreasing Paths Heuristic
 int get_leader(int v, vector<int>& parent) {

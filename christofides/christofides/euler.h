@@ -9,11 +9,15 @@
 #ifndef euler_h
 #define euler_h
 
-void dfs(int prev, int v, vector<vector<int> >& g, vector <int>& cycle) {
-    for(int i = 0;i < g.size(); ++i) {
+//DFS for Euler Cycle
+void dfs(int v, vector<vector<int> >& g, vector <int>& cycle, vector <int>& ref) {
+    int i;
+    for(; ref[v] < g.size(); ++ref[v]) {
+        i = ref[v];
         if(g[v][i]) {
-            g[v][i] = g[i][v] = 0;
-            dfs(v, i, g, cycle);
+            --g[v][i];
+            --g[i][v];
+            dfs(i, g, cycle, ref);
             cycle.push_back(v);
         }
     }
@@ -22,13 +26,9 @@ void dfs(int prev, int v, vector<vector<int> >& g, vector <int>& cycle) {
 
 vector <int> euler_cycle(vector<vector<int> > g) {
     vector <int> cycle;
+    vector <int> ref(g.size(), 0);
+    dfs(0, g, cycle, ref);
     
-    for(int i = 0;i < g.size();++i) {
-        if(g[0][i]) {
-            dfs(0, i, g, cycle);
-            break;
-        }
-    }
     return cycle;
 }
 

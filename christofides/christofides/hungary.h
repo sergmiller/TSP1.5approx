@@ -11,9 +11,6 @@
 
 #define BIG_INF (long long)1e17
 
-#include <vector>
-
-using std::vector;
 using std::cout;
 using std::endl;
 
@@ -21,21 +18,17 @@ using std::endl;
 vector <int> hungary(vector <vector <int64_t> >& g) {
     int n = (int)g.size();
     vector <vector <int64_t> > a(n+1,vector <int64_t> (n+1));
-    cout << "**************" << endl;
     for(int i = 0 ;i < n;++i) {
         for(int j = 0;j < n;++j) {
             a[i+1][j+1] = g[i][j];
-            cout << g[i][j] << " ";
         }
-        cout << endl;
     }
-    cout << "**************" << endl;
     vector <int64_t> u(n+1), v(n+1);
     vector <int> p(n+1), way(n+1);
     for(int i = 1; i <= n; ++i) {
         p[0] = i;
         int j0 = 0;
-        vector<long long> minv (n+1, BIG_INF);
+        vector<int64_t> minv (n+1, BIG_INF);
         vector<int> used (n+1, false);
         do{
             used[j0] = true;
