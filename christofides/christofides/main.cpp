@@ -21,22 +21,26 @@ using namespace std;
 
 
 
-int main() {
-    freopen("input.txt", "r", stdin);
-    int n,m;
-    cin >> n >> m;
-    vector <pair <int, pair <int,int> > > v(m);
+void build_christofides_apporx() {
+    int type,n,m,v1,v2;
+    
+    cin >> type >> n;
+    
+    vector <pair <int, pair <int,int> > > v;
     vector <vector <int64_t> > g(n,vector <int64_t> (n,INF));
-    int v1,v2;
-    for(int i = 0;i < m;++i) {
-        cin >> v1 >> v2 >> v[i].first;
-        --v1;
-        --v2;
-        v[i].second.first = v1;
-        v[i].second.second = v2;
-        g[v1][v2] = v[i].first;
-        g[v2][v1] = v[i].first;
+    switch (type) {
+        case 0:
+            v = scan_graph(n,g);
+            break;
+        case 1:
+            v = make_random_test(n,g);
+            break;
+        default:
+            return;
     }
+    
+    m = (int)v.size();
+
     
 //    for(int i = 0 ;i < n;++i) {
 //        for(int j = 0;j < n;++j) {
@@ -102,9 +106,18 @@ int main() {
     for(int i = 0;i < subn; ++i) {
         v1 = points_for_matching[i];
         v2 = points_for_matching[PERFECT_MATCHING[i]];
+        assert(PERFECT_MATCHING[PERFECT_MATCHING[i]] == i);
         ++h[v1][v2];
     }
     
+    cout << "**************" << endl;
+    for(int i = 0;i < subn;++i) {
+        for(int j = 0;j < subn;++j) {
+            cout << h[i][j] << " ";
+        }
+        cout << endl;
+    }
+    cout << "**************" << endl;
 //    cout << "merged: " << endl;
 //    for(int i = 0;i < n; ++i) {
 //        for(int j = 0;j < n;++j) {
@@ -131,16 +144,24 @@ int main() {
         used[EULER_CYCLE[i]] = 1;
     }
     
-    cout << "min hamilton path: " << endl;
+//    cout << "min hamilton path: " << endl;
     int64_t weight = 0;
     for(int i = 0;i < MIN_HAM_CYCLE.size();++i) {
         v1 = MIN_HAM_CYCLE[i];
         v2 = MIN_HAM_CYCLE[(i+1)%n];
-        cout << v1 + 1 << " " << v2 + 1 << " " << g[v1][v2] << endl;
+//        cout << v1 + 1 << " " << v2 + 1 << " " << g[v1][v2] << endl;
         weight += g[v1][v2];
     }
-    
-    cout << "path weight: " << weight << endl;
-    
-    return 0;
+//    
+//    cout << "path weight: ";
+    cout << weight << endl;
+}
+
+int main() {
+    freopen("input.txt", "r", stdin);
+    int t; //t - number of tests
+    cin >> t;
+    for(int i = 0;i < t;++i) {
+        build_christofides_apporx();
+    }
 }

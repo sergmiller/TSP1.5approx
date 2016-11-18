@@ -14,7 +14,8 @@ void dfs(int v, vector<vector<int> >& g, vector <int>& cycle, vector <int>& ref)
     int i;
     for(; ref[v] < g.size(); ++ref[v]) {
         i = ref[v];
-        if(g[v][i]) {
+        assert(g[v][i] >= 0);
+        if(g[v][i] > 0) {
             --g[v][i];
             --g[i][v];
             dfs(i, g, cycle, ref);
