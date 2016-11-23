@@ -316,7 +316,7 @@ PerfectMatching::REAL PerfectMatching::GetTwiceSum(NodeId i)
 inline void PerfectMatching::ProcessNegativeEdge(Edge* a)
 {
 	int dir;
-	Node* i;
+	Node* i = nullptr;
 	for (dir=0; dir<2; dir++)
 	{
 		i = a->head0[dir];

@@ -39,22 +39,40 @@ void build_christofides_apporx() {
             return;
     }
     
-    
-    for(int i = 0 ;i < n;++i) {
-        for(int j = 0;j < n;++j) {
-            cout << g[i][j] << " ";
-        }
-        cout << endl;
-    }
+//    cout <<"**************" << endl;
+//    cout << "Graph matrix:" << endl;
+//    
+//    for(int i = 0 ;i < n;++i) {
+//        for(int j = 0;j < n;++j) {
+//            cout << g[i][j] << " ";
+//        }
+//        cout << endl;
+//    }
+//    cout <<"**************" << endl;
     
     check_metric(n, g);
     
-    vector <pair<pair<int,int>,int64_t > > MST = mst(n, g);
+    vector <pair<int64_t, pair<int,int> > > MST = mst(n, g);
     vector <int> deg(n,0);
+//    cout <<"**************" << endl;
+//    cout << "MST:" << endl;
+    vector <vector <int64_t> > MSTtable(n,vector <int64_t> (n,0));
     for(int i = 0;i < MST.size(); ++i) {
-        ++deg[MST[i].first.first];
-        ++deg[MST[i].first.second];
+        v1 = MST[i].second.first;
+        v2 = MST[i].second.second;
+        MSTtable[v1][v2] = MST[i].first;
+        MSTtable[v2][v1] = MST[i].first;
+        ++deg[v1];
+        ++deg[v2];
     }
+//    for(int i = 0;i < n;++i) {
+//        for(int j = 0;j < n;++j) {
+//            cout << MSTtable[i][j] << " ";
+//        }
+//        cout << endl;
+//    }
+//    
+//    cout <<"**************" << endl;
     
     vector <int> points_for_matching;
     map <int,int> numbers;
@@ -89,15 +107,15 @@ void build_christofides_apporx() {
 //    }
 //    cout << endl;
 //    cout << "matching:" << endl;
-    for(int i = 0;i < subn;++i) {
-        cout << points_for_matching[i] + 1 << " " << points_for_matching[PERFECT_MATCHING[i]] + 1 << endl;
-    }
+//    for(int i = 0;i < subn;++i) {
+//        cout << points_for_matching[i] + 1 << " " << points_for_matching[PERFECT_MATCHING[i]] + 1 << endl;
+//    }
     
     //merge edges from MST and Best Matching subrgraphs to H
     vector <vector <int> > h(n,vector <int>(n,0));
     for(int i = 0;i < n-1;++i) {
-        v1 = MST[i].first.first;
-        v2 = MST[i].first.second;
+        v1 = MST[i].second.first;
+        v2 = MST[i].second.second;
         ++h[v1][v2];
         ++h[v2][v1];
     }
@@ -112,7 +130,7 @@ void build_christofides_apporx() {
         vg += g[v1][v2];
     }
     
-    cout << "matching weight: " << vg/2 << endl;
+    cout << "minimal perfect matching weight: " << vg/2 << endl;
     
     
 //    cout << "**************" << endl;
@@ -123,21 +141,21 @@ void build_christofides_apporx() {
 //        cout << endl;
 //    }
 //    cout << "**************" << endl;
-    cout << "MST + minimal PM: " << endl;
-    for(int i = 0;i < n; ++i) {
-        for(int j = 0;j < n;++j) {
-            cout << h[i][j] << " ";
-        }
-        cout << endl;
-    }
+//    cout << "MST + minimal PM: " << endl;
+//    for(int i = 0;i < n; ++i) {
+//        for(int j = 0;j < n;++j) {
+//            cout << h[i][j] << " ";
+//        }
+//        cout << endl;
+//    }
     
     vector <int> EULER_CYCLE = euler_cycle(h);
     
-    cout << "Euler cycle: " << endl;
-    for(int i = 0;i < EULER_CYCLE.size(); ++i) {
-        cout << EULER_CYCLE[i] + 1 << " ";
-    }
-    cout << endl;
+//    cout << "Euler cycle: " << endl;
+//    for(int i = 0;i < EULER_CYCLE.size(); ++i) {
+//        cout << EULER_CYCLE[i] + 1 << " ";
+//    }
+//    cout << endl;
     
     vector <int> MIN_HAM_CYCLE;
     vector <char> used(n, 0);
@@ -149,17 +167,18 @@ void build_christofides_apporx() {
         used[EULER_CYCLE[i]] = 1;
     }
     
-    cout << "min Hamilton cycle: " << endl;
+//    cout << "min Hamilton cycle: " << endl;
     int64_t weight = 0;
     for(int i = 0;i < MIN_HAM_CYCLE.size();++i) {
         v1 = MIN_HAM_CYCLE[i];
         v2 = MIN_HAM_CYCLE[(i+1)%n];
-        cout << v1 + 1 << " " << v2 + 1 << " " << g[v1][v2] << endl;
+//        cout << v1 + 1 << " " << v2 + 1 << " " << g[v1][v2] << endl;
         weight += g[v1][v2];
     }
-//    
+
     cout << "Hamilton cycle weight: ";
     cout << weight << endl;
+    cout << endl << endl;
 }
 
 int main() {
