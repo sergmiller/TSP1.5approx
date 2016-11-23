@@ -50,6 +50,7 @@
 		B9867FEC1DDA0C4400DF7200 /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 		B9867FED1DDA0E5200DF7200 /* tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tools.h; sourceTree = "<group>"; };
 		B9B8B5E41DE5DA79001B4B91 /* min_perfect_matching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = min_perfect_matching.h; sourceTree = "<group>"; };
+		B9BB4E511DE6548F003716E6 /* cf_ant_task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cf_ant_task.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +103,7 @@
 				B9867FED1DDA0E5200DF7200 /* tools.h */,
 				B952BC481DDB217800690ABA /* euler.h */,
 				B9B8B5E41DE5DA79001B4B91 /* min_perfect_matching.h */,
+				B9BB4E511DE6548F003716E6 /* cf_ant_task.h */,
 			);
 			path = christofides;
 			sourceTree = "<group>";

@@ -22,7 +22,8 @@ using namespace std;
 
 
 void build_christofides_apporx() {
-    int type,n,v1,v2;
+    int type,n,v1,v2,add;
+    int64_t expected = INF;
     
     cin >> type >> n;
     
@@ -31,13 +32,24 @@ void build_christofides_apporx() {
     switch (type) {
         case 0:
             scan_graph(n,g);
+            cout << "complete scanned graph, ";
             break;
         case 1:
-            make_random_test(n,g);
+            add = make_random_test_1(n,g);
+            expected = n;
+            cout << "complete random graph 1 type with p(1) = " << 1/(double)(add+2) << ", and exactly minimal hamilton cycle weight: " << expected << endl;
+            break;
+        case 2:
+            expected = make_random_test_2(n,g);
+            cout << "complete random graph 2 type with exactly minimal hamilton cycle weight: " << expected << endl;
             break;
         default:
+            cout << "Invalid test parametrs" << endl;
             return;
     }
+    
+    cout << "with " << n << " nodes" << endl;
+    
     
 //    cout <<"**************" << endl;
 //    cout << "Graph matrix:" << endl;
@@ -56,6 +68,7 @@ void build_christofides_apporx() {
     vector <int> deg(n,0);
 //    cout <<"**************" << endl;
 //    cout << "MST:" << endl;
+    int64_t wt = 0;
     vector <vector <int64_t> > MSTtable(n,vector <int64_t> (n,0));
     for(int i = 0;i < MST.size(); ++i) {
         v1 = MST[i].second.first;
@@ -64,7 +77,9 @@ void build_christofides_apporx() {
         MSTtable[v2][v1] = MST[i].first;
         ++deg[v1];
         ++deg[v2];
+        wt += MST[i].first;
     }
+    cout << "mst weight: " << wt << endl;
 //    for(int i = 0;i < n;++i) {
 //        for(int j = 0;j < n;++j) {
 //            cout << MSTtable[i][j] << " ";
