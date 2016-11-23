@@ -18,6 +18,7 @@ using namespace std;
 #include "tools.h"
 #include "euler.h"
 #include "hungary.h"
+#include "min_perfect_matching.h"
 
 
 
@@ -78,7 +79,7 @@ void build_christofides_apporx() {
         }
     }
     
-    vector <int> PERFECT_MATCHING = hungary(subg);
+    vector <int> PERFECT_MATCHING = get_min_perfect_matching(subg);
     
 //    cout << "mst:" << endl;
 //    for(int i = 0;i < n-1; ++i) {
@@ -93,7 +94,6 @@ void build_christofides_apporx() {
 //    for(int i = 0;i < subn;++i) {
 //        cout << points_for_matching[i] + 1 << " " << points_for_matching[PERFECT_MATCHING[i]] + 1 << endl;
 //    }
-    
     //merge edges from MST and Best Matching subrgraphs to H
     vector <vector <int> > h(n,vector <int>(n,0));
     for(int i = 0;i < n-1;++i) {

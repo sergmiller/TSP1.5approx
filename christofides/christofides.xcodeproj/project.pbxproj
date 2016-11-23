@@ -30,6 +30,8 @@
 		B9867FEC1DDA0C4400DF7200 /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 		B9867FED1DDA0E5200DF7200 /* tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tools.h; sourceTree = "<group>"; };
 		B9867FEE1DDA1E6500DF7200 /* hungary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hungary.h; sourceTree = "<group>"; };
+		B9B8B5E31DE5D861001B4B91 /* blossom5-v2Kolmogorov */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "blossom5-v2Kolmogorov"; sourceTree = "<group>"; };
+		B9B8B5E41DE5DA79001B4B91 /* min_perfect_matching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = min_perfect_matching.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +69,9 @@
 				B9867FEB1DD9FE8800DF7200 /* mst.h */,
 				B9867FED1DDA0E5200DF7200 /* tools.h */,
 				B9867FEE1DDA1E6500DF7200 /* hungary.h */,
+				B9B8B5E31DE5D861001B4B91 /* blossom5-v2Kolmogorov */,
 				B952BC481DDB217800690ABA /* euler.h */,
+				B9B8B5E41DE5DA79001B4B91 /* min_perfect_matching.h */,
 			);
 			path = christofides;
 			sourceTree = "<group>";
