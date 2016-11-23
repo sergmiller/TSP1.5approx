@@ -17,46 +17,43 @@ using namespace std;
 #include "mst.h"
 #include "tools.h"
 #include "euler.h"
-#include "hungary.h"
 #include "min_perfect_matching.h"
 
 
 
 void build_christofides_apporx() {
-    int type,n,m,v1,v2;
+    int type,n,v1,v2;
     
     cin >> type >> n;
     
-    vector <pair <int, pair <int,int> > > v;
+//    vector <pair <int, pair <int,int> > > v;
     vector <vector <int64_t> > g(n,vector <int64_t> (n,INF));
     switch (type) {
         case 0:
-            v = scan_graph(n,g);
+            scan_graph(n,g);
             break;
         case 1:
-            v = make_random_test(n,g);
+            make_random_test(n,g);
             break;
         default:
             return;
     }
     
-    m = (int)v.size();
-
     
-//    for(int i = 0 ;i < n;++i) {
-//        for(int j = 0;j < n;++j) {
-//            cout << g[i][j] << " ";
-//        }
-//        cout << endl;
-//    }
+    for(int i = 0 ;i < n;++i) {
+        for(int j = 0;j < n;++j) {
+            cout << g[i][j] << " ";
+        }
+        cout << endl;
+    }
     
     check_metric(n, g);
     
-    vector <pair<int, pair<int,int> > > MST = mst(n, v);
+    vector <pair<pair<int,int>,int64_t > > MST = mst(n, g);
     vector <int> deg(n,0);
     for(int i = 0;i < MST.size(); ++i) {
-        ++deg[MST[i].second.first];
-        ++deg[MST[i].second.second];
+        ++deg[MST[i].first.first];
+        ++deg[MST[i].first.second];
     }
     
     vector <int> points_for_matching;
@@ -79,6 +76,7 @@ void build_christofides_apporx() {
         }
     }
     
+    //Blossom Admond's Algorithm for Minimal Cost Matching
     vector <int> PERFECT_MATCHING = get_min_perfect_matching(subg);
     
 //    cout << "mst:" << endl;
@@ -91,48 +89,55 @@ void build_christofides_apporx() {
 //    }
 //    cout << endl;
 //    cout << "matching:" << endl;
-//    for(int i = 0;i < subn;++i) {
-//        cout << points_for_matching[i] + 1 << " " << points_for_matching[PERFECT_MATCHING[i]] + 1 << endl;
-//    }
+    for(int i = 0;i < subn;++i) {
+        cout << points_for_matching[i] + 1 << " " << points_for_matching[PERFECT_MATCHING[i]] + 1 << endl;
+    }
+    
     //merge edges from MST and Best Matching subrgraphs to H
     vector <vector <int> > h(n,vector <int>(n,0));
     for(int i = 0;i < n-1;++i) {
-        v1 = MST[i].second.first;
-        v2 = MST[i].second.second;
+        v1 = MST[i].first.first;
+        v2 = MST[i].first.second;
         ++h[v1][v2];
         ++h[v2][v1];
     }
+    
+    int64_t vg = 0;
     
     for(int i = 0;i < subn; ++i) {
         v1 = points_for_matching[i];
         v2 = points_for_matching[PERFECT_MATCHING[i]];
         assert(PERFECT_MATCHING[PERFECT_MATCHING[i]] == i);
         ++h[v1][v2];
+        vg += g[v1][v2];
     }
     
-    cout << "**************" << endl;
-    for(int i = 0;i < subn;++i) {
-        for(int j = 0;j < subn;++j) {
-            cout << h[i][j] << " ";
-        }
-        cout << endl;
-    }
-    cout << "**************" << endl;
-//    cout << "merged: " << endl;
-//    for(int i = 0;i < n; ++i) {
-//        for(int j = 0;j < n;++j) {
+    cout << "matching weight: " << vg/2 << endl;
+    
+    
+//    cout << "**************" << endl;
+//    for(int i = 0;i < subn;++i) {
+//        for(int j = 0;j < subn;++j) {
 //            cout << h[i][j] << " ";
 //        }
 //        cout << endl;
 //    }
+//    cout << "**************" << endl;
+    cout << "MST + minimal PM: " << endl;
+    for(int i = 0;i < n; ++i) {
+        for(int j = 0;j < n;++j) {
+            cout << h[i][j] << " ";
+        }
+        cout << endl;
+    }
     
     vector <int> EULER_CYCLE = euler_cycle(h);
     
-//    cout << "Euler cycle: " << endl;
-//    for(int i = 0;i < EULER_CYCLE.size(); ++i) {
-//        cout << EULER_CYCLE[i] + 1 << " ";
-//    }
-//    cout << endl;
+    cout << "Euler cycle: " << endl;
+    for(int i = 0;i < EULER_CYCLE.size(); ++i) {
+        cout << EULER_CYCLE[i] + 1 << " ";
+    }
+    cout << endl;
     
     vector <int> MIN_HAM_CYCLE;
     vector <char> used(n, 0);
@@ -144,16 +149,16 @@ void build_christofides_apporx() {
         used[EULER_CYCLE[i]] = 1;
     }
     
-//    cout << "min hamilton path: " << endl;
+    cout << "min Hamilton cycle: " << endl;
     int64_t weight = 0;
     for(int i = 0;i < MIN_HAM_CYCLE.size();++i) {
         v1 = MIN_HAM_CYCLE[i];
         v2 = MIN_HAM_CYCLE[(i+1)%n];
-//        cout << v1 + 1 << " " << v2 + 1 << " " << g[v1][v2] << endl;
+        cout << v1 + 1 << " " << v2 + 1 << " " << g[v1][v2] << endl;
         weight += g[v1][v2];
     }
 //    
-//    cout << "path weight: ";
+    cout << "Hamilton cycle weight: ";
     cout << weight << endl;
 }
 

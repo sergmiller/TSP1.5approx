@@ -23,37 +23,31 @@ void check_metric(int n, vector <vector <int64_t> >&  g) {
                 v[1] = g[i][k];
                 v[2] = g[j][k];
                 std::sort(v, v+3);
-                if(v[2] == INF) {
-                    continue;
-                }
                 assert(v[0] + v[1] >= v[2]);
             }
         }
     }
 }
 
-vector <pair<int,pair<int,int> > >  scan_graph(int n, vector <vector <int64_t> >& g) {
+void scan_graph(int n, vector <vector <int64_t> >& g) {
     int m;
     cin >> m;
-    int v1,v2;
-    vector <pair <int, pair <int,int> > > v(m);
+    int v1,v2,c;
+    
     for(int i = 0;i < m;++i) {
-        cin >> v1 >> v2 >> v[i].first;
+        cin >> v1 >> v2 >> c;
         --v1;
         --v2;
-        v[i].second.first = v1;
-        v[i].second.second = v2;
-        g[v1][v2] = v[i].first;
-        g[v2][v1] = v[i].first;
+        g[v1][v2] = c;
+        g[v2][v1] = c;
     }
-    return v;
 }
 
-vector <pair<int,pair<int,int> > >  make_random_test(int n, vector <vector <int64_t> >& g) {
-    //Random Generator for random edges
+void make_random_test(int n, vector <vector <int64_t> >& g) {
+    //Random Generator for random weights
     std::random_device rd;
     std::mt19937 gen(rd());
-    std::uniform_int_distribution<> dis(0,2);
+    std::uniform_int_distribution<> dis(1,4);
     
     vector <int> ind(n);
     for(int i = 0;i < n;++i) {
@@ -70,29 +64,12 @@ vector <pair<int,pair<int,int> > >  make_random_test(int n, vector <vector <int6
     for(int i = 0;i < n;++i) {
         for(int j = i+1;j < n;++j) {
             cur = dis(gen);
-            if(!cur)
-                continue;
+            cur = min(2LL,cur);
             g[i][j] = min(g[i][j], cur);
             g[j][i] = g[i][j];
         }
     }
-    
-    vector <pair<int,pair<int,int> > > bd;
-    
-    for(int i = 0;i < n;++i) {
-        for(int j = i+1;j < n;++j) {
-            if(g[i][j] != INF) {
-                bd.push_back(make_pair((int)g[i][j], make_pair(i, j)));
-            }
-        }
-    }
-  
-    
-    return bd;
 }
-
-
-
 
 
 #endif /* tools_h */

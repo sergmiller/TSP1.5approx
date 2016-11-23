@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B96D59DF1DE5F28200DEC06D /* PMexpand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B96D59CB1DE5F28200DEC06D /* PMexpand.cpp */; };
+		B96D59E01DE5F28200DEC06D /* PMinit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B96D59CC1DE5F28200DEC06D /* PMinit.cpp */; };
+		B96D59E11DE5F28200DEC06D /* PMinterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B96D59CD1DE5F28200DEC06D /* PMinterface.cpp */; };
+		B96D59E21DE5F28200DEC06D /* PMmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B96D59CE1DE5F28200DEC06D /* PMmain.cpp */; };
+		B96D59E31DE5F28200DEC06D /* PMrepair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B96D59CF1DE5F28200DEC06D /* PMrepair.cpp */; };
+		B96D59E41DE5F28200DEC06D /* PMshrink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B96D59D01DE5F28200DEC06D /* PMshrink.cpp */; };
 		B9867FE51DD9FC1400DF7200 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9867FE41DD9FC1400DF7200 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -24,13 +30,25 @@
 
 /* Begin PBXFileReference section */
 		B952BC481DDB217800690ABA /* euler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = euler.h; sourceTree = "<group>"; };
+		B96D59BC1DE5F28200DEC06D /* PerfectMatching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerfectMatching.h; sourceTree = "<group>"; };
+		B96D59BD1DE5F28200DEC06D /* README.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.TXT; sourceTree = "<group>"; };
+		B96D59BE1DE5F28200DEC06D /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
+		B96D59C01DE5F28200DEC06D /* PMimplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMimplementation.h; sourceTree = "<group>"; };
+		B96D59C11DE5F28200DEC06D /* PQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQ.h; sourceTree = "<group>"; };
+		B96D59C21DE5F28200DEC06D /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		B96D59C41DE5F28200DEC06D /* block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block.h; sourceTree = "<group>"; };
+		B96D59C81DE5F28200DEC06D /* LCA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCA.h; sourceTree = "<group>"; };
+		B96D59CB1DE5F28200DEC06D /* PMexpand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMexpand.cpp; sourceTree = "<group>"; };
+		B96D59CC1DE5F28200DEC06D /* PMinit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMinit.cpp; sourceTree = "<group>"; };
+		B96D59CD1DE5F28200DEC06D /* PMinterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMinterface.cpp; sourceTree = "<group>"; };
+		B96D59CE1DE5F28200DEC06D /* PMmain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMmain.cpp; sourceTree = "<group>"; };
+		B96D59CF1DE5F28200DEC06D /* PMrepair.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMrepair.cpp; sourceTree = "<group>"; };
+		B96D59D01DE5F28200DEC06D /* PMshrink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMshrink.cpp; sourceTree = "<group>"; };
 		B9867FE11DD9FC1400DF7200 /* christofides */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = christofides; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9867FE41DD9FC1400DF7200 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B9867FEB1DD9FE8800DF7200 /* mst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mst.h; sourceTree = "<group>"; };
 		B9867FEC1DDA0C4400DF7200 /* input.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = input.txt; sourceTree = "<group>"; };
 		B9867FED1DDA0E5200DF7200 /* tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tools.h; sourceTree = "<group>"; };
-		B9867FEE1DDA1E6500DF7200 /* hungary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hungary.h; sourceTree = "<group>"; };
-		B9B8B5E31DE5D861001B4B91 /* blossom5-v2Kolmogorov */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "blossom5-v2Kolmogorov"; sourceTree = "<group>"; };
 		B9B8B5E41DE5DA79001B4B91 /* min_perfect_matching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = min_perfect_matching.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,12 +82,24 @@
 		B9867FE31DD9FC1400DF7200 /* christofides */ = {
 			isa = PBXGroup;
 			children = (
+				B96D59BC1DE5F28200DEC06D /* PerfectMatching.h */,
+				B96D59BD1DE5F28200DEC06D /* README.TXT */,
+				B96D59BE1DE5F28200DEC06D /* LICENSE.TXT */,
+				B96D59C01DE5F28200DEC06D /* PMimplementation.h */,
+				B96D59C11DE5F28200DEC06D /* PQ.h */,
+				B96D59C21DE5F28200DEC06D /* timer.h */,
+				B96D59C41DE5F28200DEC06D /* block.h */,
+				B96D59C81DE5F28200DEC06D /* LCA.h */,
+				B96D59CB1DE5F28200DEC06D /* PMexpand.cpp */,
+				B96D59CC1DE5F28200DEC06D /* PMinit.cpp */,
+				B96D59CD1DE5F28200DEC06D /* PMinterface.cpp */,
+				B96D59CE1DE5F28200DEC06D /* PMmain.cpp */,
+				B96D59CF1DE5F28200DEC06D /* PMrepair.cpp */,
+				B96D59D01DE5F28200DEC06D /* PMshrink.cpp */,
 				B9867FEC1DDA0C4400DF7200 /* input.txt */,
 				B9867FE41DD9FC1400DF7200 /* main.cpp */,
 				B9867FEB1DD9FE8800DF7200 /* mst.h */,
 				B9867FED1DDA0E5200DF7200 /* tools.h */,
-				B9867FEE1DDA1E6500DF7200 /* hungary.h */,
-				B9B8B5E31DE5D861001B4B91 /* blossom5-v2Kolmogorov */,
 				B952BC481DDB217800690ABA /* euler.h */,
 				B9B8B5E41DE5DA79001B4B91 /* min_perfect_matching.h */,
 			);
@@ -134,6 +164,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B96D59DF1DE5F28200DEC06D /* PMexpand.cpp in Sources */,
+				B96D59E21DE5F28200DEC06D /* PMmain.cpp in Sources */,
+				B96D59E01DE5F28200DEC06D /* PMinit.cpp in Sources */,
+				B96D59E41DE5F28200DEC06D /* PMshrink.cpp in Sources */,
+				B96D59E31DE5F28200DEC06D /* PMrepair.cpp in Sources */,
+				B96D59E11DE5F28200DEC06D /* PMinterface.cpp in Sources */,
 				B9867FE51DD9FC1400DF7200 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

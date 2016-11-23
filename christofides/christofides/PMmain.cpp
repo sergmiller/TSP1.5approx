@@ -666,17 +666,17 @@ void PerfectMatching::Solve(bool finish)
 		  //&& stat.shrink_count == stat0.shrink_count 
 		  //&& stat.expand_count == stat0.expand_count )
 		{
-			if (!UpdateDuals())
-			{
-				if (!IS_INT && delta <= PM_THRESHOLD) // for numerical stability
-				{
-					//CommitEps();
-					int dual_greedy_update_option = options.dual_greedy_update_option;
-					options.dual_greedy_update_option = 2;
-					UpdateDuals();
-					options.dual_greedy_update_option = dual_greedy_update_option;
-				}
-			}
+//			if (!UpdateDuals())
+//			{
+//				if (!IS_INT && delta <= PM_THRESHOLD) // for numerical stability
+//				{
+//					//CommitEps();
+//					int dual_greedy_update_option = options.dual_greedy_update_option;
+//					options.dual_greedy_update_option = 2;
+//					UpdateDuals();
+//					options.dual_greedy_update_option = dual_greedy_update_option;
+//				}
+//			}
 		}
 	}
 

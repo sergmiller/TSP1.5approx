@@ -29,9 +29,15 @@ void merge(int v1, int v2, vector<int>& parent, vector <int>& sizes) {
 }
 
 // Kruscal's algorithm implementation
-vector <pair<int, pair<int,int> > > mst(int n, vector <pair<int, pair<int,int> > > g) {
+vector <pair<pair<int,int>,int64_t > > mst(int n, vector <vector <int64_t> >& g) {
+    vector <pair< pair<int,int>,int64_t> > v;
+    for(int i = 0 ;i < n;++i) {
+        for(int j = i+1; j < n;++j) {
+            v.push_back(make_pair(make_pair(i,j), g[i][j]));
+        }
+    }
     
-    sort(g.begin(), g.end());
+    sort(v.begin(), v.end());
     
     vector <int> parent(n);
     vector <int> sizes(n,1);
@@ -40,17 +46,16 @@ vector <pair<int, pair<int,int> > > mst(int n, vector <pair<int, pair<int,int> >
         parent[i] = i;
     }
     
-    vector <pair<int, pair<int,int> > > ans;
+    vector <pair<pair<int,int>, int64_t > > ans;
     
     int ind = 0, v1, v2;
-    int m = (int)g.size();
     
-    while(ans.size() < n - 1 && ind < m) {
-        v1 = g[ind].second.first;
-        v2 = g[ind].second.second;
+    while(ans.size() < n - 1) {
+        v1 = v[ind].first.first;
+        v2 = v[ind].first.second;
         if(get_leader(v1, parent) != get_leader(v2, parent)) {
             merge(v1,v2, parent, sizes);
-            ans.push_back(g[ind]);
+            ans.push_back(v[ind]);
         }
         ++ind;
     }
