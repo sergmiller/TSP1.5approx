@@ -193,12 +193,14 @@ void build_christofides_apporx() {
 
     cout << "Hamilton cycle weight: ";
     cout << weight << endl;
+    cout << "error: " << int((double)(weight - expected)/(double)expected * 100) << "%" << endl;
     assert(weight <= 3*(double)expected/2);
     cout << endl << endl;
 }
 
 int main() {
     freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
     int t; //t - number of tests
     cin >> t;
     for(int i = 0;i < t;++i) {

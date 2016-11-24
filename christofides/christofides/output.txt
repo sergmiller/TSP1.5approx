@@ -1,0 +1,130 @@
+complete random graph 1 type with p(1) = 0.5, and exactly minimal hamilton cycle weight: 100
+with 100 nodes
+mst weight: 99
+perfect matching with 98 nodes and 4753 edges
+    starting init...done [0.000 secs]. 0 trees
+
+done [0.000 secs]. 0 grows, 0 expands, 0 shrinks
+expands: [0.000 secs], shrinks: [0.000 secs], dual updates: [0.000 secs]
+minimal perfect matching weight: 49
+Hamilton cycle weight: 116
+error: 16%
+
+
+complete random graph 1 type with p(1) = 0.0833333, and exactly minimal hamilton cycle weight: 100
+with 100 nodes
+mst weight: 99
+perfect matching with 86 nodes and 3655 edges
+    starting init...done [0.000 secs]. 2 trees
+
+done [0.000 secs]. 8 grows, 0 expands, 0 shrinks
+expands: [0.000 secs], shrinks: [0.000 secs], dual updates: [0.000 secs]
+minimal perfect matching weight: 43
+Hamilton cycle weight: 120
+error: 20%
+
+
+complete random graph 1 type with p(1) = 0.5, and exactly minimal hamilton cycle weight: 1000
+with 1000 nodes
+mst weight: 999
+perfect matching with 996 nodes and 495510 edges
+    starting init...done [0.044 secs]. 2 trees
+
+done [0.044 secs]. 2 grows, 0 expands, 0 shrinks
+expands: [0.000 secs], shrinks: [0.000 secs], dual updates: [0.000 secs]
+minimal perfect matching weight: 498
+Hamilton cycle weight: 1256
+error: 25%
+
+
+complete random graph 1 type with p(1) = 0.0833333, and exactly minimal hamilton cycle weight: 1000
+with 1000 nodes
+mst weight: 999
+perfect matching with 972 nodes and 471906 edges
+    starting init...done [0.035 secs]. 4 trees
+
+done [0.036 secs]. 4 grows, 0 expands, 0 shrinks
+expands: [0.000 secs], shrinks: [0.000 secs], dual updates: [0.000 secs]
+minimal perfect matching weight: 486
+Hamilton cycle weight: 1399
+error: 39%
+
+
+complete random graph 1 type with p(1) = 0.00980392, and exactly minimal hamilton cycle weight: 1000
+with 1000 nodes
+mst weight: 999
+perfect matching with 834 nodes and 347361 edges
+    starting init...done [0.044 secs]. 2 trees
+
+done [0.071 secs]. 139 grows, 0 expands, 0 shrinks
+expands: [0.000 secs], shrinks: [0.000 secs], dual updates: [0.000 secs]
+minimal perfect matching weight: 417
+Hamilton cycle weight: 1260
+error: 26%
+
+
+complete random graph 2 type with exactly minimal hamilton cycle weight: 1664
+with 10 nodes
+mst weight: 1134
+perfect matching with 6 nodes and 15 edges
+    starting init...done [0.000 secs]. 2 trees
+
+done [0.000 secs]. 2 grows, 0 expands, 2 shrinks
+expands: [0.000 secs], shrinks: [0.000 secs], dual updates: [0.000 secs]
+minimal perfect matching weight: 654
+Hamilton cycle weight: 1664
+error: 0%
+
+
+complete random graph 2 type with exactly minimal hamilton cycle weight: 19604
+with 100 nodes
+mst weight: 13807
+perfect matching with 48 nodes and 1128 edges
+    starting init...done [0.000 secs]. 2 trees
+
+done [0.000 secs]. 23 grows, 0 expands, 22 shrinks
+expands: [0.000 secs], shrinks: [0.000 secs], dual updates: [0.000 secs]
+minimal perfect matching weight: 6969
+Hamilton cycle weight: 19618
+error: 0%
+
+
+complete random graph 2 type with exactly minimal hamilton cycle weight: 18866
+with 100 nodes
+mst weight: 13082
+perfect matching with 50 nodes and 1225 edges
+    starting init...done [0.000 secs]. 2 trees
+
+done [0.000 secs]. 24 grows, 0 expands, 24 shrinks
+expands: [0.000 secs], shrinks: [0.000 secs], dual updates: [0.000 secs]
+minimal perfect matching weight: 6914
+Hamilton cycle weight: 18868
+error: 0%
+
+
+complete random graph 2 type with exactly minimal hamilton cycle weight: 20076
+with 100 nodes
+mst weight: 14086
+perfect matching with 44 nodes and 946 edges
+    starting init...done [0.000 secs]. 2 trees
+
+done [0.000 secs]. 21 grows, 0 expands, 20 shrinks
+expands: [0.000 secs], shrinks: [0.000 secs], dual updates: [0.000 secs]
+minimal perfect matching weight: 7038
+Hamilton cycle weight: 20076
+error: 0%
+
+
+complete random graph 2 type with exactly minimal hamilton cycle weight: 20802
+with 100 nodes
+mst weight: 14544
+perfect matching with 50 nodes and 1225 edges
+    starting init...done [0.000 secs]. 2 trees
+
+done [0.000 secs]. 24 grows, 0 expands, 23 shrinks
+expands: [0.000 secs], shrinks: [0.000 secs], dual updates: [0.000 secs]
+minimal perfect matching weight: 7466
+Hamilton cycle weight: 20810
+error: 0%
+
+
