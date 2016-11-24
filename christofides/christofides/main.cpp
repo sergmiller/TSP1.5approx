@@ -108,7 +108,7 @@ void build_christofides_apporx() {
             subg[j][i] = subg[i][j];
         }
     }
-    
+
     //Blossom Admond's Algorithm for Minimal Cost Matching
     vector <int> PERFECT_MATCHING = get_min_perfect_matching(subg);
     
@@ -193,6 +193,7 @@ void build_christofides_apporx() {
 
     cout << "Hamilton cycle weight: ";
     cout << weight << endl;
+    assert(weight <= 3*(double)expected/2);
     cout << endl << endl;
 }
 

@@ -28,13 +28,14 @@ vector <int> get_min_perfect_matching(vector <vector <int64_t> >& g) {
             }
         }
     }
-    
+    cout << "OK" << endl;
     matching.Solve();
-    
+//    cout << "OK" << endl;
     vector <int> ans(n);
     for(int i = 0;i < n;++i) {
         ans[i] = matching.GetMatch(i);
     }
+//    cout << "OK" << endl;
     
     return ans;
 }
