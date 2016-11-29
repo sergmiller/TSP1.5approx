@@ -1,0 +1,204 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		B9BB4E8B1DE66406003716E6 /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
+		B9BB4E8C1DE66406003716E6 /* block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = block.h; sourceTree = "<group>"; };
+		B9BB4E8D1DE66406003716E6 /* blossom5 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = blossom5; sourceTree = "<group>"; };
+		B9BB4E8E1DE66406003716E6 /* CHANGES.TXT */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGES.TXT; sourceTree = "<group>"; };
+		B9BB4E8F1DE66406003716E6 /* example.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = example.cpp; sourceTree = "<group>"; };
+		B9BB4E901DE66406003716E6 /* example.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = example.o; sourceTree = "<group>"; };
+		B9BB4E911DE66406003716E6 /* GEOM */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GEOM; sourceTree = "<group>"; };
+		B9BB4E921DE66406003716E6 /* GRAPH1.TXT */ = {isa = PBXFileReference; lastKnownFileType = text; path = GRAPH1.TXT; sourceTree = "<group>"; };
+		B9BB4E931DE66406003716E6 /* GRAPH2.TXT */ = {isa = PBXFileReference; lastKnownFileType = text; path = GRAPH2.TXT; sourceTree = "<group>"; };
+		B9BB4E941DE66406003716E6 /* LCA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCA.h; sourceTree = "<group>"; };
+		B9BB4E951DE66406003716E6 /* LICENSE.TXT */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
+		B9BB4E961DE66406003716E6 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B9BB4E971DE66406003716E6 /* MinCost */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MinCost; sourceTree = "<group>"; };
+		B9BB4E981DE66406003716E6 /* misc.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = misc.cpp; sourceTree = "<group>"; };
+		B9BB4E991DE66406003716E6 /* misc.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = misc.o; sourceTree = "<group>"; };
+		B9BB4E9A1DE66406003716E6 /* PerfectMatching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerfectMatching.h; sourceTree = "<group>"; };
+		B9BB4E9B1DE66406003716E6 /* PMduals.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PMduals.cpp; sourceTree = "<group>"; };
+		B9BB4E9C1DE66406003716E6 /* PMduals.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = PMduals.o; sourceTree = "<group>"; };
+		B9BB4E9D1DE66406003716E6 /* PMexpand.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PMexpand.cpp; sourceTree = "<group>"; };
+		B9BB4E9E1DE66406003716E6 /* PMexpand.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = PMexpand.o; sourceTree = "<group>"; };
+		B9BB4E9F1DE66406003716E6 /* PMimplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMimplementation.h; sourceTree = "<group>"; };
+		B9BB4EA01DE66406003716E6 /* PMinit.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PMinit.cpp; sourceTree = "<group>"; };
+		B9BB4EA11DE66406003716E6 /* PMinit.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = PMinit.o; sourceTree = "<group>"; };
+		B9BB4EA21DE66406003716E6 /* PMinterface.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PMinterface.cpp; sourceTree = "<group>"; };
+		B9BB4EA31DE66406003716E6 /* PMinterface.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = PMinterface.o; sourceTree = "<group>"; };
+		B9BB4EA41DE66406003716E6 /* PMmain.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PMmain.cpp; sourceTree = "<group>"; };
+		B9BB4EA51DE66406003716E6 /* PMmain.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = PMmain.o; sourceTree = "<group>"; };
+		B9BB4EA61DE66406003716E6 /* PMrepair.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PMrepair.cpp; sourceTree = "<group>"; };
+		B9BB4EA71DE66406003716E6 /* PMrepair.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = PMrepair.o; sourceTree = "<group>"; };
+		B9BB4EA81DE66406003716E6 /* PMshrink.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PMshrink.cpp; sourceTree = "<group>"; };
+		B9BB4EA91DE66406003716E6 /* PMshrink.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = PMshrink.o; sourceTree = "<group>"; };
+		B9BB4EAA1DE66406003716E6 /* PQ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PQ.h; sourceTree = "<group>"; };
+		B9BB4EAB1DE66406003716E6 /* README.TXT */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.TXT; sourceTree = "<group>"; };
+		B9BB4EAC1DE66406003716E6 /* timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		B9BB4EAD1DE66406003716E6 /* USAGE.TXT */ = {isa = PBXFileReference; lastKnownFileType = text; path = USAGE.TXT; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		B9BB4E851DE66406003716E6 = {
+			isa = PBXGroup;
+			children = (
+				B9BB4E8B1DE66406003716E6 /* .DS_Store */,
+				B9BB4E8C1DE66406003716E6 /* block.h */,
+				B9BB4E8D1DE66406003716E6 /* blossom5 */,
+				B9BB4E8E1DE66406003716E6 /* CHANGES.TXT */,
+				B9BB4E8F1DE66406003716E6 /* example.cpp */,
+				B9BB4E901DE66406003716E6 /* example.o */,
+				B9BB4E911DE66406003716E6 /* GEOM */,
+				B9BB4E921DE66406003716E6 /* GRAPH1.TXT */,
+				B9BB4E931DE66406003716E6 /* GRAPH2.TXT */,
+				B9BB4E941DE66406003716E6 /* LCA.h */,
+				B9BB4E951DE66406003716E6 /* LICENSE.TXT */,
+				B9BB4E961DE66406003716E6 /* Makefile */,
+				B9BB4E971DE66406003716E6 /* MinCost */,
+				B9BB4E981DE66406003716E6 /* misc.cpp */,
+				B9BB4E991DE66406003716E6 /* misc.o */,
+				B9BB4E9A1DE66406003716E6 /* PerfectMatching.h */,
+				B9BB4E9B1DE66406003716E6 /* PMduals.cpp */,
+				B9BB4E9C1DE66406003716E6 /* PMduals.o */,
+				B9BB4E9D1DE66406003716E6 /* PMexpand.cpp */,
+				B9BB4E9E1DE66406003716E6 /* PMexpand.o */,
+				B9BB4E9F1DE66406003716E6 /* PMimplementation.h */,
+				B9BB4EA01DE66406003716E6 /* PMinit.cpp */,
+				B9BB4EA11DE66406003716E6 /* PMinit.o */,
+				B9BB4EA21DE66406003716E6 /* PMinterface.cpp */,
+				B9BB4EA31DE66406003716E6 /* PMinterface.o */,
+				B9BB4EA41DE66406003716E6 /* PMmain.cpp */,
+				B9BB4EA51DE66406003716E6 /* PMmain.o */,
+				B9BB4EA61DE66406003716E6 /* PMrepair.cpp */,
+				B9BB4EA71DE66406003716E6 /* PMrepair.o */,
+				B9BB4EA81DE66406003716E6 /* PMshrink.cpp */,
+				B9BB4EA91DE66406003716E6 /* PMshrink.o */,
+				B9BB4EAA1DE66406003716E6 /* PQ.h */,
+				B9BB4EAB1DE66406003716E6 /* README.TXT */,
+				B9BB4EAC1DE66406003716E6 /* timer.h */,
+				B9BB4EAD1DE66406003716E6 /* USAGE.TXT */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		B9BB4E8A1DE66406003716E6 /* blossom5-v2Kolmogorov */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = B9BB4EAE1DE66406003716E6 /* Build configuration list for PBXLegacyTarget "blossom5-v2Kolmogorov" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/sergmiller/Downloads/blossom5-v2Kolmogorov";
+			dependencies = (
+			);
+			name = "blossom5-v2Kolmogorov";
+			passBuildSettingsInEnvironment = 1;
+			productName = "blossom5-v2Kolmogorov";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		B9BB4E861DE66406003716E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = B9BB4E891DE66406003716E6 /* Build configuration list for PBXProject "blossom5-v2Kolmogorov" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B9BB4E851DE66406003716E6;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9BB4E8A1DE66406003716E6 /* blossom5-v2Kolmogorov */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		B9BB4E871DE66406003716E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		B9BB4E881DE66406003716E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		B9BB4EAF1DE66406003716E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "blossom5-v2Kolmogorov";
+			};
+			name = Debug;
+		};
+		B9BB4EB01DE66406003716E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "blossom5-v2Kolmogorov";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9BB4E891DE66406003716E6 /* Build configuration list for PBXProject "blossom5-v2Kolmogorov" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9BB4E871DE66406003716E6 /* Debug */,
+				B9BB4E881DE66406003716E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9BB4EAE1DE66406003716E6 /* Build configuration list for PBXLegacyTarget "blossom5-v2Kolmogorov" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9BB4EAF1DE66406003716E6 /* Debug */,
+				B9BB4EB01DE66406003716E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9BB4E861DE66406003716E6 /* Project object */;
+}
