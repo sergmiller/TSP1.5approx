@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B96D59DF1DE5F28200DEC06D /* PMexpand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B96D59CB1DE5F28200DEC06D /* PMexpand.cpp */; };
-		B96D59E01DE5F28200DEC06D /* PMinit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B96D59CC1DE5F28200DEC06D /* PMinit.cpp */; };
-		B96D59E11DE5F28200DEC06D /* PMinterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B96D59CD1DE5F28200DEC06D /* PMinterface.cpp */; };
-		B96D59E21DE5F28200DEC06D /* PMmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B96D59CE1DE5F28200DEC06D /* PMmain.cpp */; };
-		B96D59E31DE5F28200DEC06D /* PMrepair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B96D59CF1DE5F28200DEC06D /* PMrepair.cpp */; };
-		B96D59E41DE5F28200DEC06D /* PMshrink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B96D59D01DE5F28200DEC06D /* PMshrink.cpp */; };
 		B9867FE51DD9FC1400DF7200 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9867FE41DD9FC1400DF7200 /* main.cpp */; };
+		B9BB4F321DE667FC003716E6 /* GPMinit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9BB4F121DE667FC003716E6 /* GPMinit.cpp */; };
+		B9BB4F331DE667FC003716E6 /* GPMinterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9BB4F131DE667FC003716E6 /* GPMinterface.cpp */; };
+		B9BB4F341DE667FC003716E6 /* GPMkdtree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9BB4F141DE667FC003716E6 /* GPMkdtree.cpp */; };
+		B9BB4F351DE667FC003716E6 /* GPMmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9BB4F161DE667FC003716E6 /* GPMmain.cpp */; };
+		B9BB4F361DE667FC003716E6 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B9BB4F1B1DE667FC003716E6 /* Makefile */; };
+		B9BB4F371DE667FC003716E6 /* instances.inc in Sources */ = {isa = PBXBuildFile; fileRef = B9BB4F1D1DE667FC003716E6 /* instances.inc */; };
+		B9BB4F381DE667FC003716E6 /* MinCost.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9BB4F1E1DE667FC003716E6 /* MinCost.cpp */; };
+		B9BB4F391DE667FC003716E6 /* misc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9BB4F231DE667FC003716E6 /* misc.cpp */; };
+		B9BB4F3A1DE667FC003716E6 /* PMduals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9BB4F251DE667FC003716E6 /* PMduals.cpp */; };
+		B9BB4F3B1DE667FC003716E6 /* PMexpand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9BB4F261DE667FC003716E6 /* PMexpand.cpp */; };
+		B9BB4F3C1DE667FC003716E6 /* PMinit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9BB4F281DE667FC003716E6 /* PMinit.cpp */; };
+		B9BB4F3D1DE667FC003716E6 /* PMinterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9BB4F291DE667FC003716E6 /* PMinterface.cpp */; };
+		B9BB4F3E1DE667FC003716E6 /* PMmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9BB4F2A1DE667FC003716E6 /* PMmain.cpp */; };
+		B9BB4F3F1DE667FC003716E6 /* PMrepair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9BB4F2B1DE667FC003716E6 /* PMrepair.cpp */; };
+		B9BB4F401DE667FC003716E6 /* PMshrink.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9BB4F2C1DE667FC003716E6 /* PMshrink.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,20 +39,6 @@
 
 /* Begin PBXFileReference section */
 		B952BC481DDB217800690ABA /* euler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = euler.h; sourceTree = "<group>"; };
-		B96D59BC1DE5F28200DEC06D /* PerfectMatching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerfectMatching.h; sourceTree = "<group>"; };
-		B96D59BD1DE5F28200DEC06D /* README.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.TXT; sourceTree = "<group>"; };
-		B96D59BE1DE5F28200DEC06D /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
-		B96D59C01DE5F28200DEC06D /* PMimplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMimplementation.h; sourceTree = "<group>"; };
-		B96D59C11DE5F28200DEC06D /* PQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQ.h; sourceTree = "<group>"; };
-		B96D59C21DE5F28200DEC06D /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
-		B96D59C41DE5F28200DEC06D /* block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block.h; sourceTree = "<group>"; };
-		B96D59C81DE5F28200DEC06D /* LCA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCA.h; sourceTree = "<group>"; };
-		B96D59CB1DE5F28200DEC06D /* PMexpand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMexpand.cpp; sourceTree = "<group>"; };
-		B96D59CC1DE5F28200DEC06D /* PMinit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMinit.cpp; sourceTree = "<group>"; };
-		B96D59CD1DE5F28200DEC06D /* PMinterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMinterface.cpp; sourceTree = "<group>"; };
-		B96D59CE1DE5F28200DEC06D /* PMmain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMmain.cpp; sourceTree = "<group>"; };
-		B96D59CF1DE5F28200DEC06D /* PMrepair.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMrepair.cpp; sourceTree = "<group>"; };
-		B96D59D01DE5F28200DEC06D /* PMshrink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMshrink.cpp; sourceTree = "<group>"; };
 		B9867FE11DD9FC1400DF7200 /* christofides */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = christofides; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9867FE41DD9FC1400DF7200 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B9867FEB1DD9FE8800DF7200 /* mst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mst.h; sourceTree = "<group>"; };
@@ -51,6 +46,40 @@
 		B9867FED1DDA0E5200DF7200 /* tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tools.h; sourceTree = "<group>"; };
 		B9B8B5E41DE5DA79001B4B91 /* min_perfect_matching.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = min_perfect_matching.h; sourceTree = "<group>"; };
 		B9BB4E511DE6548F003716E6 /* cf_ant_task.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cf_ant_task.h; sourceTree = "<group>"; };
+		B9BB4F0D1DE667FC003716E6 /* block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block.h; sourceTree = "<group>"; };
+		B9BB4F0E1DE667FC003716E6 /* CHANGES.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGES.TXT; sourceTree = "<group>"; };
+		B9BB4F111DE667FC003716E6 /* GeomPerfectMatching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeomPerfectMatching.h; sourceTree = "<group>"; };
+		B9BB4F121DE667FC003716E6 /* GPMinit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMinit.cpp; sourceTree = "<group>"; };
+		B9BB4F131DE667FC003716E6 /* GPMinterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMinterface.cpp; sourceTree = "<group>"; };
+		B9BB4F141DE667FC003716E6 /* GPMkdtree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMkdtree.cpp; sourceTree = "<group>"; };
+		B9BB4F151DE667FC003716E6 /* GPMkdtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPMkdtree.h; sourceTree = "<group>"; };
+		B9BB4F161DE667FC003716E6 /* GPMmain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GPMmain.cpp; sourceTree = "<group>"; };
+		B9BB4F171DE667FC003716E6 /* GRAPH1.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GRAPH1.TXT; sourceTree = "<group>"; };
+		B9BB4F181DE667FC003716E6 /* GRAPH2.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GRAPH2.TXT; sourceTree = "<group>"; };
+		B9BB4F191DE667FC003716E6 /* LCA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCA.h; sourceTree = "<group>"; };
+		B9BB4F1A1DE667FC003716E6 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
+		B9BB4F1B1DE667FC003716E6 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		B9BB4F1D1DE667FC003716E6 /* instances.inc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; path = instances.inc; sourceTree = "<group>"; };
+		B9BB4F1E1DE667FC003716E6 /* MinCost.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MinCost.cpp; sourceTree = "<group>"; };
+		B9BB4F1F1DE667FC003716E6 /* MinCost.cpp.orig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MinCost.cpp.orig; sourceTree = "<group>"; };
+		B9BB4F201DE667FC003716E6 /* MinCost.cpp.rej */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MinCost.cpp.rej; sourceTree = "<group>"; };
+		B9BB4F211DE667FC003716E6 /* MinCost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinCost.h; sourceTree = "<group>"; };
+		B9BB4F221DE667FC003716E6 /* p */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = p; sourceTree = "<group>"; };
+		B9BB4F231DE667FC003716E6 /* misc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = misc.cpp; sourceTree = "<group>"; };
+		B9BB4F241DE667FC003716E6 /* PerfectMatching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerfectMatching.h; sourceTree = "<group>"; };
+		B9BB4F251DE667FC003716E6 /* PMduals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMduals.cpp; sourceTree = "<group>"; };
+		B9BB4F261DE667FC003716E6 /* PMexpand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMexpand.cpp; sourceTree = "<group>"; };
+		B9BB4F271DE667FC003716E6 /* PMimplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMimplementation.h; sourceTree = "<group>"; };
+		B9BB4F281DE667FC003716E6 /* PMinit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMinit.cpp; sourceTree = "<group>"; };
+		B9BB4F291DE667FC003716E6 /* PMinterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMinterface.cpp; sourceTree = "<group>"; };
+		B9BB4F2A1DE667FC003716E6 /* PMmain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMmain.cpp; sourceTree = "<group>"; };
+		B9BB4F2B1DE667FC003716E6 /* PMrepair.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMrepair.cpp; sourceTree = "<group>"; };
+		B9BB4F2C1DE667FC003716E6 /* PMshrink.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PMshrink.cpp; sourceTree = "<group>"; };
+		B9BB4F2D1DE667FC003716E6 /* PQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PQ.h; sourceTree = "<group>"; };
+		B9BB4F2E1DE667FC003716E6 /* README.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.TXT; sourceTree = "<group>"; };
+		B9BB4F2F1DE667FC003716E6 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
+		B9BB4F301DE667FC003716E6 /* USAGE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = USAGE.TXT; sourceTree = "<group>"; };
+		B9BB4F421DE71D1F003716E6 /* output.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +96,7 @@
 		B9867FD81DD9FC1400DF7200 = {
 			isa = PBXGroup;
 			children = (
+				B9BB4F0C1DE667FC003716E6 /* blossom5-v2.05Kolmogorov */,
 				B9867FE31DD9FC1400DF7200 /* christofides */,
 				B9867FE21DD9FC1400DF7200 /* Products */,
 			);
@@ -83,20 +113,6 @@
 		B9867FE31DD9FC1400DF7200 /* christofides */ = {
 			isa = PBXGroup;
 			children = (
-				B96D59BC1DE5F28200DEC06D /* PerfectMatching.h */,
-				B96D59BD1DE5F28200DEC06D /* README.TXT */,
-				B96D59BE1DE5F28200DEC06D /* LICENSE.TXT */,
-				B96D59C01DE5F28200DEC06D /* PMimplementation.h */,
-				B96D59C11DE5F28200DEC06D /* PQ.h */,
-				B96D59C21DE5F28200DEC06D /* timer.h */,
-				B96D59C41DE5F28200DEC06D /* block.h */,
-				B96D59C81DE5F28200DEC06D /* LCA.h */,
-				B96D59CB1DE5F28200DEC06D /* PMexpand.cpp */,
-				B96D59CC1DE5F28200DEC06D /* PMinit.cpp */,
-				B96D59CD1DE5F28200DEC06D /* PMinterface.cpp */,
-				B96D59CE1DE5F28200DEC06D /* PMmain.cpp */,
-				B96D59CF1DE5F28200DEC06D /* PMrepair.cpp */,
-				B96D59D01DE5F28200DEC06D /* PMshrink.cpp */,
 				B9867FEC1DDA0C4400DF7200 /* input.txt */,
 				B9867FE41DD9FC1400DF7200 /* main.cpp */,
 				B9867FEB1DD9FE8800DF7200 /* mst.h */,
@@ -104,8 +120,66 @@
 				B952BC481DDB217800690ABA /* euler.h */,
 				B9B8B5E41DE5DA79001B4B91 /* min_perfect_matching.h */,
 				B9BB4E511DE6548F003716E6 /* cf_ant_task.h */,
+				B9BB4F421DE71D1F003716E6 /* output.txt */,
 			);
 			path = christofides;
+			sourceTree = "<group>";
+		};
+		B9BB4F0C1DE667FC003716E6 /* blossom5-v2.05Kolmogorov */ = {
+			isa = PBXGroup;
+			children = (
+				B9BB4F0D1DE667FC003716E6 /* block.h */,
+				B9BB4F0E1DE667FC003716E6 /* CHANGES.TXT */,
+				B9BB4F101DE667FC003716E6 /* GEOM */,
+				B9BB4F171DE667FC003716E6 /* GRAPH1.TXT */,
+				B9BB4F181DE667FC003716E6 /* GRAPH2.TXT */,
+				B9BB4F191DE667FC003716E6 /* LCA.h */,
+				B9BB4F1A1DE667FC003716E6 /* LICENSE.TXT */,
+				B9BB4F1B1DE667FC003716E6 /* Makefile */,
+				B9BB4F1C1DE667FC003716E6 /* MinCost */,
+				B9BB4F231DE667FC003716E6 /* misc.cpp */,
+				B9BB4F241DE667FC003716E6 /* PerfectMatching.h */,
+				B9BB4F251DE667FC003716E6 /* PMduals.cpp */,
+				B9BB4F261DE667FC003716E6 /* PMexpand.cpp */,
+				B9BB4F271DE667FC003716E6 /* PMimplementation.h */,
+				B9BB4F281DE667FC003716E6 /* PMinit.cpp */,
+				B9BB4F291DE667FC003716E6 /* PMinterface.cpp */,
+				B9BB4F2A1DE667FC003716E6 /* PMmain.cpp */,
+				B9BB4F2B1DE667FC003716E6 /* PMrepair.cpp */,
+				B9BB4F2C1DE667FC003716E6 /* PMshrink.cpp */,
+				B9BB4F2D1DE667FC003716E6 /* PQ.h */,
+				B9BB4F2E1DE667FC003716E6 /* README.TXT */,
+				B9BB4F2F1DE667FC003716E6 /* timer.h */,
+				B9BB4F301DE667FC003716E6 /* USAGE.TXT */,
+			);
+			name = "blossom5-v2.05Kolmogorov";
+			path = "../../../../../Downloads/blossom5-v2.05Kolmogorov";
+			sourceTree = "<group>";
+		};
+		B9BB4F101DE667FC003716E6 /* GEOM */ = {
+			isa = PBXGroup;
+			children = (
+				B9BB4F111DE667FC003716E6 /* GeomPerfectMatching.h */,
+				B9BB4F121DE667FC003716E6 /* GPMinit.cpp */,
+				B9BB4F131DE667FC003716E6 /* GPMinterface.cpp */,
+				B9BB4F141DE667FC003716E6 /* GPMkdtree.cpp */,
+				B9BB4F151DE667FC003716E6 /* GPMkdtree.h */,
+				B9BB4F161DE667FC003716E6 /* GPMmain.cpp */,
+			);
+			path = GEOM;
+			sourceTree = "<group>";
+		};
+		B9BB4F1C1DE667FC003716E6 /* MinCost */ = {
+			isa = PBXGroup;
+			children = (
+				B9BB4F1D1DE667FC003716E6 /* instances.inc */,
+				B9BB4F1E1DE667FC003716E6 /* MinCost.cpp */,
+				B9BB4F1F1DE667FC003716E6 /* MinCost.cpp.orig */,
+				B9BB4F201DE667FC003716E6 /* MinCost.cpp.rej */,
+				B9BB4F211DE667FC003716E6 /* MinCost.h */,
+				B9BB4F221DE667FC003716E6 /* p */,
+			);
+			path = MinCost;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,12 +240,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B96D59DF1DE5F28200DEC06D /* PMexpand.cpp in Sources */,
-				B96D59E21DE5F28200DEC06D /* PMmain.cpp in Sources */,
-				B96D59E01DE5F28200DEC06D /* PMinit.cpp in Sources */,
-				B96D59E41DE5F28200DEC06D /* PMshrink.cpp in Sources */,
-				B96D59E31DE5F28200DEC06D /* PMrepair.cpp in Sources */,
-				B96D59E11DE5F28200DEC06D /* PMinterface.cpp in Sources */,
+				B9BB4F3E1DE667FC003716E6 /* PMmain.cpp in Sources */,
+				B9BB4F381DE667FC003716E6 /* MinCost.cpp in Sources */,
+				B9BB4F3B1DE667FC003716E6 /* PMexpand.cpp in Sources */,
+				B9BB4F321DE667FC003716E6 /* GPMinit.cpp in Sources */,
+				B9BB4F3A1DE667FC003716E6 /* PMduals.cpp in Sources */,
+				B9BB4F391DE667FC003716E6 /* misc.cpp in Sources */,
+				B9BB4F3D1DE667FC003716E6 /* PMinterface.cpp in Sources */,
+				B9BB4F341DE667FC003716E6 /* GPMkdtree.cpp in Sources */,
+				B9BB4F351DE667FC003716E6 /* GPMmain.cpp in Sources */,
+				B9BB4F401DE667FC003716E6 /* PMshrink.cpp in Sources */,
+				B9BB4F3C1DE667FC003716E6 /* PMinit.cpp in Sources */,
+				B9BB4F331DE667FC003716E6 /* GPMinterface.cpp in Sources */,
+				B9BB4F371DE667FC003716E6 /* instances.inc in Sources */,
+				B9BB4F3F1DE667FC003716E6 /* PMrepair.cpp in Sources */,
+				B9BB4F361DE667FC003716E6 /* Makefile in Sources */,
 				B9867FE51DD9FC1400DF7200 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
